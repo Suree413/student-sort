@@ -1,0 +1,223 @@
+/* ===================================================================
+   801201 Week 4 — Student List + Bubble Sort
+   CSS นี้ให้ไว้พร้อมใช้ ไม่ต้องแก้
+   =================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #F1F5F9;
+  color: #1E293B;
+  padding: 24px 16px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ---------- หัวหน้า ---------- */
+
+.page-header {
+  background: #1E40AF;
+  color: #fff;
+  padding: 20px 24px;
+  border-radius: 8px 8px 0 0;
+}
+
+.page-header h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-top: 2px;
+}
+
+/* ---------- เพิ่มนักศึกษา ---------- */
+
+.add-section {
+  background: #fff;
+  padding: 16px 24px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.add-section input {
+  flex: 1;
+  min-width: 140px;
+  padding: 10px 12px;
+  border: 1px solid #CBD5E1;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.add-section input:focus {
+  outline: 2px solid #1E40AF;
+  outline-offset: -1px;
+  border-color: #1E40AF;
+}
+
+.add-btn {
+  padding: 10px 24px;
+  background: #0F766E;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #115E59;
+}
+
+/* ---------- ปุ่ม Sort ---------- */
+
+.sort-section {
+  background: #fff;
+  padding: 16px 24px;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.sort-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748B;
+  margin-bottom: 8px;
+}
+
+.sort-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sort-buttons button {
+  padding: 8px 16px;
+  background: #EFF6FF;
+  color: #1E40AF;
+  border: 1px solid #BFDBFE;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.sort-buttons button:hover {
+  background: #1E40AF;
+  color: #fff;
+  border-color: #1E40AF;
+}
+
+/* ---------- แถบสถานะ ---------- */
+
+.status-bar {
+  background: #F0FDFA;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
+  color: #0F766E;
+  border-bottom: 1px solid #CCFBF1;
+}
+
+.status-bar strong {
+  color: #115E59;
+}
+
+/* ---------- รายชื่อ ---------- */
+
+.student-list {
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+  padding: 8px 0;
+  min-height: 80px;
+}
+
+.student-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 24px;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.student-item:last-child {
+  border-bottom: none;
+}
+
+.student-rank {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  background: #EFF6FF;
+  color: #1E40AF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.student-info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.student-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.student-gpa {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  color: #0F766E;
+  background: #F0FDFA;
+  padding: 2px 10px;
+  border-radius: 4px;
+}
+
+.delete-btn {
+  padding: 6px 14px;
+  background: #fff;
+  color: #DC2626;
+  border: 1px solid #FECACA;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #DC2626;
+  color: #fff;
+  border-color: #DC2626;
+}
+
+.empty-message {
+  text-align: center;
+  color: #94A3B8;
+  padding: 28px 16px;
+}
