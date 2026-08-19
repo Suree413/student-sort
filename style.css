@@ -11,8 +11,8 @@
 
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
-  background: #F1F5F9;
-  color: #1E293B;
+  background: #aac7e5;
+  color: #e282c3;
   padding: 24px 16px;
   line-height: 1.6;
 }
@@ -25,7 +25,7 @@ body {
 /* ---------- หัวหน้า ---------- */
 
 .page-header {
-  background: #1E40AF;
+  background: #1e99af;
   color: #fff;
   padding: 20px 24px;
   border-radius: 8px 8px 0 0;
@@ -81,7 +81,7 @@ body {
 }
 
 .add-btn:hover {
-  background: #115E59;
+  background: #f2f5b3;
 }
 
 /* ---------- ปุ่ม Sort ---------- */
@@ -133,12 +133,12 @@ body {
   flex-wrap: wrap;
   gap: 8px;
   font-size: 14px;
-  color: #0F766E;
+  color: #24075a;
   border-bottom: 1px solid #CCFBF1;
 }
 
 .status-bar strong {
-  color: #115E59;
+  color: #020a4b;
 }
 
 /* ---------- รายชื่อ ---------- */
@@ -193,7 +193,7 @@ body {
 .student-gpa {
   font-family: 'Courier New', monospace;
   font-size: 14px;
-  color: #0F766E;
+  color: #032f46;
   background: #F0FDFA;
   padding: 2px 10px;
   border-radius: 4px;
@@ -211,9 +211,9 @@ body {
 }
 
 .delete-btn:hover {
-  background: #DC2626;
+  background: #0f0009;
   color: #fff;
-  border-color: #DC2626;
+  border-color: #000213;
 }
 
 .empty-message {
